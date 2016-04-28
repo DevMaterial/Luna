@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400italic);
+
+body{
+  background-image: url(https://images.unsplash.com/photo-1442917377311-e0c8b1476d42?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=bc885e6e2a2057685e6a239e52083285);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+nav {
+  z-index: 9999;
+  padding: 17px 0 0 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  min-height: 47px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+.follow {
+    background-color: rgba(0, 0, 0, 0.83);
+    text-shadow: none;
+
+}
+
+.flex-item {
+  font-weight: bold;
+  font-size: .750rem;
+  text-align: center;
+  font-family: 'Crimson Text';
+  letter-spacing: .15em;
+}
+
+.flex-item:nth-of-type(2),
+.flex-item:nth-of-type(3),
+.flex-item:nth-of-type(4) {
+  padding-top: 8px;
+}
+
+.flex-item:nth-of-type(1) {
+  font-size: 1.5rem;
+  flex-grow: .75;
+  text-align: left;
+  padding-left: 60px;
+ }
+
+.flex-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.flex-item a:hover {
+  padding-bottom: 4px;
+  border-bottom: 1px solid white;
+}
+
+.flex-item:nth-of-type(2) {
+  text-align: right;
+  flex-grow: 2;
+  padding-right: 20px;
+}
+.flex-item:nth-of-type(3) {
+  flex-grow: 2;
+  text-align: left;
+  padding-left: 20px;
+}
+.flex-item:nth-of-type(4) {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 60px;
+  padding-left: 15px;
+
+}
+
+.flex-item.follow {
+  padding: 0;
+}
+
+.timeline {
+  float: left;
+  padding: 40px 0 0 65px;
+  height: 1900px;
+}
+
+.dates {
+  clear: right;
+  margin: 150px 0 0 200px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: .15em;
+}
+
+h2 {
+  color: white;
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: .15em;
+  padding-left: 85px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: white;
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: .15em;
+}
+
+#shift {
+  padding-top: 100px;
+}
+
+/**********Dates************/
+.item:hover p.text-1 span{
+  display: none;
+
+}
+.item:hover p.text-1:after{
+  content: 'Italian astronomer Galileo Galilei made the first telescopic observation of the moon';
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+}
+
+.item-2:hover p.text-2 span{
+  display: none;
+}
+.item-2:hover p.text-2:after{
+  content: 'Micheal Florent van Langren made the first map of the moon.';
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+}
+/*****************************/
+.item-3:hover p.text-3 span{
+  display: none;
+}
+.item-3:hover p.text-3:after{
+  content: 'Roger Joseph Boscovich proved the moon has no atmosphere.';
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/*****************************/
+.item-4:hover p.text-4 span{
+  display: none;
+}
+.item-4:hover p.text-4:after{
+  content: 'Soviet spacecraft Luna 2 reached the moon, impacting near the crater Autolycus.';
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/*****************************/
+.item-5:hover p.text-5 span{
+  display: none;
+}
+.item-5:hover p.text-5:after{
+  content: 'President John F. Kennedy proposed a manned lunar program.';
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/*****************************/
+.item-6:hover p.text-6 span{
+  display: none;
+}
+.item-6:hover p.text-6:after{
+  content: 'Soviet spacecraft Luna 9 made the first soft landing on the moon.';
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/*****************************/
+.item-7:hover p.text-7 span{
+  display: none;
+}
+.item-7:hover p.text-7:after{
+  content: "NASA's Apollo 8 made the first manned flight to the moon, circling it 10 times before returning to Earth.";
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/*****************************/
+.item-8:hover p.text-8 span{
+  display: none;
+}
+.item-8:hover p.text-8:after{
+  content: "NASA's Galileo spacecraft obtained multispectral images of the western limb and part of the far side of the moon.";
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/*****************************/
+.item-9:hover p.text-9 span{
+  display: none;
+}
+.item-9:hover p.text-9:after{
+  content: "NASA's Lunar Prospector mission launched.";
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/*****************************/
+.item-10:hover p.text-10 span{
+  display: none;
+}
+.item-10:hover p.text-10:after{
+  content: "NASA's Lunar Reconnaissance Orbiter launched";
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/*****************************/
+
+/***FADE IN***/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/***FADE OUT***/
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}

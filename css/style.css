@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400italic);
+
+html, body {
+ -moz-osx-font-smoothing: antialiased;
+ -webkit-font-smoothing: antialiased;
+ margin: 0;
+ padding: 0;
+ height: 100%;
+}
+
+
+
+h1 {
+  color: white;
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: .15em;
+  position: relative;
+  top: 50%;
+  opacity: .50;
+
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+
+}
+nav {
+  z-index: 9999;
+  padding: 17px 0 0 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  min-height: 47px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+.follow {
+    background-color: rgba(255, 255, 255, 1);
+    color:black;
+    text-shadow: none;
+}
+
+.flex-item {
+  font-weight: bold;
+  font-size: .750rem;
+  text-align: center;
+  font-family: 'Crimson Text';
+  letter-spacing: .15em;
+}
+
+.flex-item:nth-of-type(2),
+.flex-item:nth-of-type(3),
+.flex-item:nth-of-type(4) {
+  padding-top: 8px;
+}
+
+.flex-item:nth-of-type(1) {
+  font-size: 1.5rem;
+  flex-grow: .75;
+  text-align: left;
+  padding-left: 60px;
+ }
+
+.flex-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.flex-item a:hover {
+  padding-bottom: 4px;
+  border-bottom: 1px solid white;
+}
+
+.flex-item:nth-of-type(2) {
+  text-align: right;
+  flex-grow: 2;
+  padding-right: 20px;
+}
+.flex-item:nth-of-type(3) {
+  flex-grow: 2;
+  text-align: left;
+  padding-left: 20px;
+}
+.flex-item:nth-of-type(4) {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 60px;
+  padding-left: 15px;
+
+}
+
+.flex-item.follow {
+  padding: 0;
+}
+
+
+
+
+
+.main-screen {
+  z-index: 98;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.slideshow{
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+  list-style: none;
+}
+
+.image {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    display: block;
+
+    transition:opacity 1s ease-in-out;
+    -moz-transition:opacity 1s ease-in-out;
+    -webkit-transition:opacity 1s ease-in-out;
+
+       // IE <9 Fallback
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+
+}
+
+.image{
+    opacity: 0;
+}
+
+.active{
+    opacity: 1;
+}
+
+.image:nth-of-type(1) {
+  background:
+url('http://i.imgur.com/rtbUtTD.jpg') no-repeat center center;
+  background-size: cover;
+
+}
+
+.image:nth-of-type(2) {
+  background: url('http://40.media.tumblr.com/d92093cda6433220434132108102b948/tumblr_o04s4kpzgp1sfie3io1_1280.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.image:nth-of-type(3) {
+  background: url('http://40.media.tumblr.com/cc83ef90cac7d839cf619aae7e8dd30e/tumblr_o1ddegWoqH1sfie3io1_1280.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+}
